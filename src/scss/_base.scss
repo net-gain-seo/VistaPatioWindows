@@ -1,0 +1,624 @@
+html{
+      font-size: $htmlfs;
+      overflow-y: scroll;
+}
+body {
+    font-family: $fontLato;
+    font-size: $fsBody;
+    background-color: #fff;
+    color: $textColor;
+    overflow-x: hidden;
+}
+.no-scroll {
+    overflow: hidden;
+    // position: fixed;
+    // height: 100%;
+    // width: 100%;
+    #openNavOverlay {
+        display: block;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $linkColor;
+    text-decoration: none !important;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+        color: $primaryColor;
+    }
+}
+.largetitle{
+  font-size: $fsTitle;
+}
+h1, .h1 {
+    font-family: $fontAnton;
+    font-size: $fsH1;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: black;
+    font-weight: 300;
+}
+h2,
+h3 {
+    font-family: $fontAnton;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+h2, .h2 {
+    font-size: $fsH2;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: black;
+    font-weight: 300;
+}
+h3 {
+    font-size: $fsH3;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $fontAnton;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: black;
+}
+p{
+  font-size: $fsBody;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.title {
+    font-family: $fontAnton;
+    font-size: $fsTitle;
+    color: black;
+}
+.txt-primary {
+    color: $primaryColor;
+}
+.txt-secondary {
+    color: $secondaryColor;
+}
+.bg-light {
+    background-color: $lightGray;
+}
+#openNavOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99995;
+    display: none;
+    background-color: rgba(black,0.5);
+    overflow: hidden;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin: 2rem;
+    padding-left: 0px;
+}
+li{
+  margin-bottom: 0.5rem;
+}
+.row{
+  padding: 60px 0px;
+}
+.padding140{
+  padding: 140px 0px;
+}
+.padding120{
+  padding: 120px 0px;
+}
+.padding100{
+  padding: 100px 0px;
+}
+.padding90{
+  padding: 90px 0px;
+}
+.padding80{
+  padding: 80px 0px;
+}
+.padding70{
+  padding: 70px 0px;
+}
+.padding60{
+  padding: 60px 0px;
+}
+.padding50{
+  padding: 50px 0px;
+}
+.padding40{
+  padding: 40px 0px;
+}
+.padding30{
+  padding: 30px 0px;
+}
+.padding25{
+  padding: 25px 0px;
+}
+.padding20{
+  padding: 20px 0px;
+}
+.padding10{
+  padding: 10px 0px;
+}
+.padding0{
+  padding: 0px;
+}
+.margin0{
+  margin: 0px;
+}
+.paddingtop0{
+  padding-top: 0px;
+}
+.paddingbottom0{
+  padding-bottom: 0px;
+}
+.paddingtop25{
+  padding-top: 25px;
+}
+.paddingbottom25{
+  padding-bottom: 25px;
+}
+.paddingright0{
+  padding-right: 0px;
+}
+.paddingleft0{
+  padding-left: 0px;
+}
+.marginb{
+  margin-bottom: 2.5rem;
+}
+.semibold{
+  font-weight: 500;
+}
+.normalfont{
+  font-weight: normal;
+}
+.bold{
+  font-weight: bold;
+}
+.fontitalic{
+  font-style: italic;
+}
+.whiteText{
+  color: white!important;
+}
+.blackText{
+  color: black!important;
+}
+.primaryColor{
+  color: $primaryColor;
+}
+.text-align-center{
+  text-align: center;
+}
+.largetitle{
+  font-size: 4.5rem;
+}
+.largefont p{
+    font-size: $fsH2;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+.button{
+  background-color: $primaryColor;
+  color: white;
+  border: 0px;
+  padding: 10px 20px;
+  line-height: 1;
+  font-size: 2.3rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: $fontAnton;
+}
+.button:hover{
+  background-color: $secondaryColor;
+  color: white;
+}
+header{
+  .gps{
+      margin-right: 40px;
+  }
+}
+.gps{
+  color: white;
+  img{
+      margin-top: -5px;
+  }
+}
+.gps:hover{
+  color: white;
+}
+
+
+
+.button.invert{
+  background-color: $secondaryColor;
+  color: white;
+  border: 0px;
+  padding: 10px 20px;
+  line-height: 1;
+  font-size: 2.3rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: $fontAnton;
+}
+.button.invert:hover{
+  background-color: $primaryColor;
+  color: white;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #666;
+    width: 100%;
+    text-align: center;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+
+
+
+/** Text Alignments **/
+.textLeft {
+    text-align: left;
+}
+.textCenter {
+    text-align: center;
+}
+.textRight {
+    text-align: right;
+}
+
+/***************************************************
+*********** END CUSTOM TEXT HELPER CLASSES *********
+***************************************************/
+
+
+/*******************************************
+*********** PADDING HELPER CLASSES *********
+********************************************/
+
+/* Padding Top AND Bottom */
+
+.padding0 {
+   padding: 0;
+}
+.padding10 {
+   padding: 1rem 0;
+}
+.padding20 {
+   padding: 2rem 0;
+}
+.padding25{
+  padding: 25px 0px;
+}
+.padding30 {
+   padding: 3rem 0;
+}
+.padding40 {
+   padding: 4rem 0;
+}
+.padding50 {
+   padding: 5rem 0;
+}
+.padding60 {
+   padding: 6rem 0;
+}
+.padding70 {
+    padding: 7rem 0;
+}
+.padding80 {
+   padding: 8rem 0;
+}
+.padding90 {
+    padding: 9rem 0;
+}
+.padding100 {
+   padding: 10rem 0;
+}
+
+
+/* Padding Top ONLY */
+.paddingT0 {
+    padding-top: 0;
+}
+.paddingT10 {
+   padding-top: 1rem;
+}
+.paddingT20 {
+   padding-top: 2rem;
+}
+.paddingT30 {
+   padding-top: 3rem;
+}
+.paddingT40 {
+   padding-top: 4rem;
+}
+.paddingT50 {
+   padding-top: 5rem;
+}
+.paddingT60 {
+   padding-top: 6rem;
+}
+.paddingT70 {
+    padding-top: 7rem;
+}
+.paddingT80 {
+   padding-top: 8rem;
+}
+.paddingT90 {
+    padding-top: 9rem;
+}
+.paddingT100 {
+   padding-top: 10rem;
+}
+
+
+/* Padding Bottom ONLY */
+.paddingB0 {
+   padding-bottom: 0;
+}
+.paddingB10 {
+   padding-bottom: 1rem;
+}
+.paddingB20 {
+   padding-bottom: 2rem;
+}
+.paddingB30 {
+   padding-bottom: 3rem;
+}
+.paddingB40 {
+   padding-bottom: 4rem;
+}
+.paddingB50 {
+   padding-bottom: 5rem;
+}
+.paddingB60 {
+   padding-bottom: 6rem;
+}
+.paddingB70 {
+    padding-bottom: 7rem;
+}
+.paddingB80 {
+   padding-bottom: 8rem;
+}
+.paddingB90 {
+    padding-bottom: 9rem;
+}
+.paddingB100 {
+   padding-bottom: 10rem;
+}
+
+/***********************************************
+*********** END PADDING HELPER CLASSES *********
+***********************************************/
+
+
+
+/******************************************
+*********** MARGIN HELPER CLASSES *********
+******************************************/
+/* Margin Top AND Bottom */
+
+.margin0 {
+   margin: 0;
+}
+.margin10 {
+   margin: 1rem 0;
+}
+.margin20 {
+   margin: 2rem 0;
+}
+.margin25{
+  margin: 25px 0px;
+}
+.margin30 {
+   margin: 3rem 0;
+}
+.margin40 {
+   margin: 4rem 0;
+}
+.margin50 {
+   margin: 5rem 0;
+}
+.margin60 {
+   margin: 6rem 0;
+}
+.margin70 {
+    margin: 7rem 0;
+}
+.margin80 {
+   margin: 8rem 0;
+}
+.margin90 {
+    margin: 9rem 0;
+}
+.margin100 {
+   margin: 10rem 0;
+}
+
+
+/* Margin Top ONLY */
+.marginT0 {
+    margin-top: 0;
+}
+.marginT10 {
+   margin-top: 1rem;
+}
+.marginT20 {
+   margin-top: 2rem;
+}
+.marginT30 {
+   margin-top: 3rem;
+}
+.marginT40 {
+   margin-top: 4rem;
+}
+.marginT50 {
+   margin-top: 5rem;
+}
+.marginT60 {
+   margin-top: 6rem;
+}
+.marginT70 {
+    margin-top: 7rem;
+}
+.marginT80 {
+   margin-top: 8rem;
+}
+.marginT90 {
+    margin-top: 9rem;
+}
+.marginT100 {
+   margin-top: 10rem;
+}
+
+
+/* Margin Bottom ONLY */
+.marginB0 {
+   margin-bottom: 0;
+}
+.marginB10 {
+   margin-bottom: 1rem;
+}
+.marginB20 {
+   margin-bottom: 2rem;
+}
+.marginB30 {
+   margin-bottom: 3rem;
+}
+.marginB40 {
+   margin-bottom: 4rem;
+}
+.marginB50 {
+   margin-bottom: 5rem;
+}
+.marginB60 {
+   margin-bottom: 6rem;
+}
+.marginB70 {
+    margin-bottom: 7rem;
+}
+.marginB80 {
+   margin-bottom: 8rem;
+}
+.marginB90 {
+    margin-bottom: 9rem;
+}
+.marginB100 {
+   margin-bottom: 10rem;
+}
+
+/* Margin Right Classes */
+.marginR10 {
+    margin-right: 1rem;
+}
+.marginR20 {
+    margin-right: 2rem;
+}
+.marginR30 {
+    margin-right: 3rem;
+}
+.marginR40 {
+    margin-right: 4rem;
+}
+.marginR50 {
+    margin-right: 5rem;
+}
+.marginR60 {
+    margin-right: 6rem;
+}
+.marginR80 {
+    margin-right: 8rem;
+}
+.marginR100 {
+    margin-right: 10rem;
+}
+
+/* Margin Left Classes */
+.marginL10 {
+    margin-left: 1rem;
+}
+.marginL20 {
+    margin-left: 2rem;
+}
+.marginL30 {
+    margin-left: 3rem;
+}
+.marginL40 {
+    margin-left: 4rem;
+}
+.marginL50 {
+    margin-left: 5rem;
+}
+.marginL60 {
+    margin-left: 6rem;
+}
+
+.marginRL10 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.marginRL20 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.marginRL30 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.marginRL40 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/**********************************************
+*********** END MARGIN HELPER CLASSES *********
+**********************************************/
+
+
+
+/**********************************************
+*********** LINE HEIGHT HELPER CLASSES ********
+**********************************************/
+.LHone{
+    line-height: 1;
+}
+
+.LHonehalf{
+    line-height: 1.5;
+}
+
+.LHtwo{
+    line-height: 2;
+}
+
+.LHtwohalf{
+    line-height: 2.5;
+}
+
+.LHthree{
+    line-height: 3;
+}
+
+.LHthreehalf{
+    line-height: 3.5;
+}
+
+.LHfour{
+    line-height: 4;
+}
+/**********************************************
+******** END LINE HEIGHT HELPER CLASSES *******
+**********************************************/

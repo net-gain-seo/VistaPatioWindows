@@ -1,0 +1,102 @@
+footer{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  .logo{
+    align-self: flex-end;
+    margin-bottom: 25px;
+  }
+  .phone-assoc{
+    flex: 1 0 35%!important;
+  }
+  .phone{
+    flex: 1 0 65%!important;
+  }
+  .phone{
+    float: right;
+    clear: both;
+    display: block;
+    font-size: 3.5rem;
+    text-align: right;
+    .largephone{
+      font-size: 3.5rem;
+      font-family: $fontOswald;
+      color: white;
+    }
+    span{
+      font-size: 3.5rem;
+      font-family: $fontOswald;
+      color: white;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    a{
+      font-size: 3.5rem;
+      font-family: $fontOswald;
+      color: white;
+    }
+  }
+  .social{
+    float: left;
+    clear: both;
+    display: block;
+    a:hover{
+      opacity: 0.8;
+    }
+    img{
+      margin-right: 15px;
+    }
+  }
+}
+.subfooter {
+    display: flex;
+    flex: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 25px 0;
+    text-align: center;
+}
+// FOOTER
+.site-footer {
+    background-color: #46535D;
+    color: #fff;
+
+    .copyright {
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .netgain {
+        font-family: Arial, sans-serif;
+        font-size: 1.6rem;
+    }
+}
+.bottom-footer{
+  background-color: $darkGray;
+  color: white;
+}
+
+.flex-footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    .f-item {
+        flex: 1 0 50%;
+        align-self: flex-start;
+    }
+}
+.netgain {
+    text-align: right;
+}
+.footer-contact-container {
+    text-align: center;
+    background-color: $darkGray;
+    color: #fff;
+    padding: 60px 0px;
+    h3{
+      font-size: 3rem;
+    }
+
+}

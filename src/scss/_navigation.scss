@@ -1,0 +1,131 @@
+.main-nav #menu-main-menu li {
+    position: relative;
+    margin-left: 25px;
+}
+.main-nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        display: block;
+        // transition: all 0.2s ease-in-out;
+    }
+    > ul {
+        margin-right: 0.5rem;
+        float: right;
+        // Top level
+        > li {
+            display: inline-block;
+            position: relative;
+            line-height: 53px;
+            margin-bottom: 0px;
+            margin-left: 25px;
+            transition: box-shadow 0.2s ease-in-out;
+            > a {
+                padding: 0 0rem;
+                color: $textColor;
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+            // Second level menu
+            .sub-menu {
+                position: absolute;
+                line-height: 1.5;
+                width: 250px;
+                background-color: white;
+                box-shadow: 2px 2px 20px rgba(black,0.25);
+                max-height: 0;
+                z-index: 10;
+                overflow: hidden;
+                transition: max-height 0s;
+                ul {
+                    padding-top: 30px;
+                }
+                li {
+                    display: block;
+                    margin-bottom: 0px;
+                    color: $primaryColor;
+                    a {
+                        padding: 0.25rem 1.25rem;
+                        color: $primaryColor;
+
+                        // second level menu hover/active
+                        &:hover,
+                        &.active {
+                            background-color: $primaryColor;
+                            color: #fff;
+                        }
+                    }
+                }
+                .current-menu-item a{
+                    background-color: $primaryColor;
+                    color: #fff;
+                }
+            } // end second level ul
+            // Show second level menu on hover
+            &:hover {
+                .sub-menu {
+                    z-index: 10;
+                    max-height: 1000px;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            &:hover,
+            &.active {
+                padding: 0px 0px;
+
+            }
+            &.current-menu-item, &.current-menu-parent{
+              a{
+                padding: 0px 0px;
+                color: $primaryColor;
+              }
+              padding: 0px 0px;
+              color: $primaryColor;
+            }
+        } // end top level li
+    } // end top level ul
+}
+// Get a Quote button
+.get-quote {
+    background-color: $secondaryColor;
+    color: white;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 40px;
+    font-family: "Anton","Oswald",sans-serif;
+    margin-bottom: -1px;
+    width: inherit;
+    font-size: 2.3rem;
+    width: initial;
+    padding: 10px 25px;
+    float: right;
+    order: 2;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    flex-direction: row;
+    float: right;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    &:hover {
+        color: #fff;
+        background-color: darken($primaryColor,8%);
+    }
+    &:focus {
+        color: #fff;
+    }
+}
+.get-quote:hover {
+    background-color: $primaryColor;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-box-shadow: inset 0 0px 0 #2a3249;
+    box-shadow: inset 0 0px 0 #2a3249;
+    a{
+      color: white;
+    }
+}

@@ -1,0 +1,22 @@
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+  background-color: $secondaryColor!important;
+}
+.woocommerce div.product form.cart .button{
+    background-color: $secondaryColor!important;
+}
+.page-id-251{
+  #fullWidth{
+    max-width: 1140px!important;
+    margin: auto!important;
+    margin-top: 40px!important;
+  }
+}
+.woocommerce-page{
+  .page-content{
+    .woocommerce{
+      max-width: 1140px!important;
+      margin: auto!important;
+      margin-top: 40px!important;  
+    }
+  }
+}
